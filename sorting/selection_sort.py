@@ -87,7 +87,13 @@ if __name__ == "__main__":
 
 
 
+"""
+Time complexity:
+O(n^2) - best
+       - worst
+       - Average
 
+"""
 
 
 
