@@ -84,3 +84,50 @@ if __name__  == "__main__":
 
 
 
+"""
+
+Time complexity:
+O(n^2) 
+       - worst
+       - Average
+
+Can be optimised
+if everything is in the  correct order in the first check.
+the array is in the Ascending order
+
+"""
+
+def bubble_sort(arr):
+    for i in range(len(arr),1, -1):
+        didswap = 0
+        for j in range(0,i-1,1):
+            if arr[j] > arr[j+1]:
+                temp = arr[j+1]
+                arr[j+1] = arr[j]
+                arr[j] = temp
+                didswap = 1
+        if didswap == 0:
+            break
+        print("runs")
+
+    return arr
+
+
+if __name__  == "__main__":
+    arr = [13,46,24,52,20,9]
+    arr1 = [6,5,4,3,2,1]
+    arr2 = [1,2,3,4,5,6]
+
+    print("The array after the bubble sort is:", bubble_sort(arr))
+    print("The array after the bubble sort is:", bubble_sort(arr1))
+    print("The array after the bubble sort is:", bubble_sort(arr2))
+
+
+
+"""
+
+Time complexity:
+O(n) - best case
+
+
+"""
